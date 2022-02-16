@@ -10,9 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let getData = getJSON('https://rafaelescalfoni.github.io/desenv_web/filmes.json'); // Solicitei o json
     let jsonData = JSON.stringify(getData); // Transformei em string para poder trabalhar com isso
     let jsonDataParse = JSON.parse(JSON.parse(jsonData)); // Após isso, transformei em objeto para trabalhar
-
+    console.log(getData);
+    console.log(jsonData);
+    console.log(jsonDataParse);
     // Conteúdo dinâmico dos cards
-    for (let i = 0; i < jsonDataParse.length; i++) {
+    for (let i = 0; i < 6; i++) {
         console.log(jsonDataParse[i]);
         let classificacao = jsonDataParse[i].classificacao;
         let elenco = jsonDataParse[i].elenco;
