@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Conteúdo dinâmico dos cards
     for (let i = 0; i < jsonDataParse.length; i++) {
+        console.log(jsonDataParse[i]);
         let classificacao = jsonDataParse[i].classificacao;
         let elenco = jsonDataParse[i].elenco;
         let img = jsonDataParse[i].figura;

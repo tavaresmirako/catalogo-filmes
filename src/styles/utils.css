@@ -1,10 +1,11 @@
-:root {
+:root{
     --white-500: #fff;
     --black-500: #000;
-    --grey-background: #c3cfd9;
+
     --grey-background: #c3cfd9;
     --green-light: #8dd7cf;
     --yellow-light: #f6e291;
     --red-light: #e9a2ad;
     --purple-light: #8da1d7;
+
 }

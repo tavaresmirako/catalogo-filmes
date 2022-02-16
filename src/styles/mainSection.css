@@ -1,0 +1,95 @@
+body{
+    background: var(--grey-background);
+}
+
+.mainSection{
+    margin: 50px 5vw;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.mainSection__card{
+    background: var(--white-500);
+    padding: 20px;
+    width:100%;
+    max-width: 40vw;
+}
+
+@media screen and (max-width:1279px){
+    .mainSection__card{
+        max-width: 80vw;
+    }
+}
+
+.mainSection__card__top{
+    display:grid;
+    grid-template-columns: 1.3fr 1.6fr 0.1fr;
+    gap: 20px;
+}
+
+.imgFilme{
+    max-width: 300px;
+}
+
+.mainSection__card__top__mainImage{
+    width:100%;
+}
+
+.mainSection__card__top__middleContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 10px;
+}
+
+.mainSection__card__top__middleContent p{
+    text-align: center;
+    width:100%;
+}
+
+.classificacaoLivre, .classificacao14, .classificacao16, .classificacao18{
+    padding: 5px 20px 25px;
+}
+
+.classificacaoLivre{
+    background: var(--green-light);
+}
+
+.classificacao14{
+    background: var(--purple-light);
+}
+
+.classificacao16{
+    background: var(--yellow-light);
+}
+
+.classificacao18{
+    background: var(--red-light);
+}
+
+.mainSection__card__similars{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap:wrap;
+}
+
+.mainSection__card__similars__img{
+    width:100px;
+    height:100px;
+    display: none;
+}
+
+.mainSection__card__similars__img img{
+    width:100%;
+    height:100%;
+}
+
+.displayBlock{
+    display: block;
+}

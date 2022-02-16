@@ -1,16 +1,17 @@
 function getJSON(url) {
-    var resp;
-    var xmlHttp;
+    var resp ;
+    var xmlHttp ;
 
-    resp = '';
-    xmlHttp = new XMlHttpResquet();
+    resp  = '' ;
+    xmlHttp = new XMLHttpRequest();
 
-    if (xmlHttp != null) {
-
-        xmlHttp.open("GET", url, false);
-        xmlHttp.send(null);
+    if(xmlHttp != null)
+    {
+        xmlHttp.open( "GET", url, false );
+        xmlHttp.send( null );
         resp = xmlHttp.responseText;
     }
     return resp;
 }
+
 export default getJSON;
